@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 6 – Interactive JavaScript Project</title>
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <!-- Main title -->
+  <h1>Week 6: Interactive JavaScript Project</h1>
+  <!-- This text will be changed dynamically by JavaScript -->
+  <p id="welcomeText">Welcome to my project!</p>
+
+  <!-- ===============================
+       PART 1: EVENT HANDLING
+       =============================== -->
+  <h2>Event Handling</h2>
+
+  <!-- Button that triggers a hover event -->
+  <button id="hoverBtn">Hover Over Me</button>
+  <!-- Paragraph where hover feedback will show -->
+  <p id="hoverMsg"></p>
+
+  <!-- Input field for typing -->
+  <input type="text" id="keyInput" placeholder="Type something">
+  <!-- Paragraph where key press feedback will show -->
+  <p id="keyMsg"></p>
+
+  <!-- ===============================
+       PART 2: INTERACTIVE FEATURES
+       =============================== -->
+  <h2>Interactive Features</h2>
+
+  <!-- Counter game: counts every button click -->
+  <button id="counterBtn">Click Me</button>
+  <p id="counterDisplay">Count: 0</p>
+
+  <!-- FAQ section with collapsible answers -->
+  <h3>FAQ</h3>
+  <div class="faq-item">
+    <button class="faq-question">What is JavaScript?</button>
+    <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">What can I build?</button>
+    <p class="faq-answer">You can build games, apps, animations, and much more.</p>
+  </div>
+
+  <!-- ===============================
+       PART 3: FORM VALIDATION
+       =============================== -->
+  <h2>Sign Up Form</h2>
+  <!-- Form with multiple fields -->
+  <form id="signupForm">
+    <label>Name:</label>
+    <input type="text" id="nameInput"><br>
+
+    <label>Email:</label>
+    <input type="text" id="emailInput"><br>
+
+    <label>Password:</label>
+    <input type="password" id="passwordInput"><br>
+
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+  </form>
+  <!-- Feedback message after validation -->
+  <p id="formMsg"></p>
+
+  <!-- ===============================
+       PART 4: PREVIOUS FRAMEWORK (Week 5 base)
+       =============================== -->
+  <h2>Age Checker</h2>
+  <input type="number" id="ageInput" placeholder="Enter your age">
+  <button id="checkAgeBtn">Check Age</button>
+  <p id="ageResult"></p>
+
+  <h2>Functions Demo</h2>
+  <button id="calcBtn">Calculate Total (5 + 10)</button>
+  <p id="calcResult"></p>
+
+  <h2>Loops Demo</h2>
+  <button id="loopBtn">Show Numbers 1-5</button>
+  <ul id="numberList"></ul>
+
+  <h2>DOM Interactivity</h2>
+  <button id="toggleBtn">Toggle Background</button>
+  <button id="newItemBtn">Add New List Item</button>
+  <ul id="dynamicList"></ul>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
